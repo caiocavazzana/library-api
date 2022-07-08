@@ -4,6 +4,7 @@ import com.example.libraryapi.api.dto.BookDTO;
 import com.example.libraryapi.api.model.entity.Book;
 import com.example.libraryapi.exception.BusinessException;
 import com.example.libraryapi.service.BookService;
+import com.example.libraryapi.service.LoanService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -44,6 +45,9 @@ public class BookControllerTest {
 
     @MockBean
     private BookService service;
+
+    @MockBean
+    private LoanService loanService;
 
     private final ModelMapper modelMapper = new ModelMapper();
 

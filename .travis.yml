@@ -1,9 +1,6 @@
 language: java
-sudo: required
 jdk:
   - oraclejdk11
 dist: trusty
 before_install:
-  - chmod +x mvnw
-install: true
-script: ./mvnw clean install
+  - sudo chmod 777 mvnw

@@ -5,3 +5,5 @@ jdk:
 dist: trusty
 before_install:
   - chmod +x mvnw
+install: true
+script: ./mvnw clean install

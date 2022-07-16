@@ -1,15 +1,3 @@
-arch: amd64
-
 language: java
-
-jdk:
-  - oraclejdk11
-
-cache:
-  directories:
-    - $HOME/.m2
-
-script:
-  - java --version
-  - ./mvnw clean install
-  - ./mvnw test
+sudo: true
+script: mvn clean verify

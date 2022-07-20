@@ -120,3 +120,57 @@ java.lang.IllegalStateException: couldn't determine local port. Please set sprin
 2022-07-20 19:45:30.298  INFO 9596 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
 2022-07-20 19:45:30.299  INFO 9596 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-07-20 19:45:30.299  INFO 9596 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-07-20 20:30:29.950  INFO 17135 --- [restartedMain] c.e.libraryapi.LibraryApiApplication     : Starting LibraryApiApplication using Java 11.0.15 on caio-PC with PID 17135 (/media/caio/DATA/Google Drive/Estudos/TDD/library-api/target/classes started by caio in /media/caio/DATA/Google Drive/Estudos/TDD/library-api)
+2022-07-20 20:30:29.951  INFO 17135 --- [restartedMain] c.e.libraryapi.LibraryApiApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-07-20 20:30:29.985  INFO 17135 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-20 20:30:29.986  INFO 17135 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-20 20:30:30.752  INFO 17135 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-20 20:30:30.799  INFO 17135 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+2022-07-20 20:30:31.214  INFO 17135 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-20 20:30:31.222  INFO 17135 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-20 20:30:31.222  INFO 17135 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-20 20:30:31.264  INFO 17135 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-20 20:30:31.265  INFO 17135 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1279 ms
+2022-07-20 20:30:31.349  INFO 17135 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-20 20:30:31.502  INFO 17135 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-20 20:30:31.510  INFO 17135 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:79b51086-c53d-4624-a292-65b006bb92b5'
+2022-07-20 20:30:31.631  INFO 17135 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-20 20:30:31.665  INFO 17135 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-20 20:30:31.776  INFO 17135 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-20 20:30:31.861  INFO 17135 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-07-20 20:30:32.297  INFO 17135 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-20 20:30:32.303  INFO 17135 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-20 20:30:32.635  WARN 17135 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-20 20:30:33.590  INFO 17135 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-20 20:30:33.594  INFO 17135 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2022-07-20 20:30:33.619  INFO 17135 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-20 20:30:33.632  INFO 17135 --- [restartedMain] c.e.libraryapi.LibraryApiApplication     : Started LibraryApiApplication in 3.981 seconds (JVM running for 4.384)
+2022-07-20 20:30:33.723  WARN 17135 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=spring-boot-application, managementUrl=http://caio-PC:8080/actuator, healthUrl=http://caio-PC:8080/actuator/health, serviceUrl=http://caio-PC:8080/) at spring-boot-admin ([http://localhost:8081/instances]): I/O error on POST request for "http://localhost:8081/instances": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused). Further attempts are logged on DEBUG level
+2022-07-20 20:30:44.615  INFO 17135 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-20 20:30:44.616  INFO 17135 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-07-20 20:34:37.796  INFO 17834 --- [restartedMain] c.e.libraryapi.LibraryApiApplication     : Starting LibraryApiApplication using Java 11.0.15 on caio-PC with PID 17834 (/media/caio/DATA/Google Drive/Estudos/TDD/library-api/target/classes started by caio in /media/caio/DATA/Google Drive/Estudos/TDD/library-api)
+2022-07-20 20:34:37.797  INFO 17834 --- [restartedMain] c.e.libraryapi.LibraryApiApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-07-20 20:34:37.838  INFO 17834 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-20 20:34:37.838  INFO 17834 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-20 20:34:38.572  INFO 17834 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-20 20:34:38.623  INFO 17834 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 2 JPA repository interfaces.
+2022-07-20 20:34:39.024  INFO 17834 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-20 20:34:39.031  INFO 17834 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-20 20:34:39.031  INFO 17834 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-20 20:34:39.071  INFO 17834 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-20 20:34:39.071  INFO 17834 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1232 ms
+2022-07-20 20:34:39.150  INFO 17834 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-20 20:34:39.295  INFO 17834 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-20 20:34:39.303  INFO 17834 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:272aab5b-2e59-443b-a901-de276785bd94'
+2022-07-20 20:34:39.421  INFO 17834 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-20 20:34:39.457  INFO 17834 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-20 20:34:39.575  INFO 17834 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-20 20:34:39.667  INFO 17834 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-07-20 20:34:40.112  INFO 17834 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-20 20:34:40.117  INFO 17834 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-20 20:34:40.439  WARN 17834 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-20 20:34:41.306  INFO 17834 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-20 20:34:41.309  INFO 17834 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2022-07-20 20:34:41.334  INFO 17834 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-20 20:34:41.347  INFO 17834 --- [restartedMain] c.e.libraryapi.LibraryApiApplication     : Started LibraryApiApplication in 3.865 seconds (JVM running for 4.225)
+2022-07-20 20:34:41.426  WARN 17834 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=spring-boot-application, managementUrl=http://caio-PC:8080/actuator, healthUrl=http://caio-PC:8080/actuator/health, serviceUrl=http://caio-PC:8080/) at spring-boot-admin ([http://localhost:8081/instances]): I/O error on POST request for "http://localhost:8081/instances": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused). Further attempts are logged on DEBUG level

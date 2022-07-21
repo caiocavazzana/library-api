@@ -22,7 +22,6 @@ public class LoanDTO {
     private String customer;
 
     @NotEmpty
-
     private String email;
 
     private BookDTO book;

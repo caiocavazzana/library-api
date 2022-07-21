@@ -6,7 +6,8 @@ import com.example.libraryapi.api.model.entity.Loan;
 import com.example.libraryapi.api.model.repository.LoanRepository;
 import com.example.libraryapi.exception.BusinessException;
 import com.example.libraryapi.service.LoanService;
-import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -16,14 +17,11 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-@NoArgsConstructor
+@AllArgsConstructor
 public class LoanServiceImpl implements LoanService {
-    private LoanRepository repository;
 
-    public LoanServiceImpl(LoanRepository repository) {
-
-        this.repository = repository;
-    }
+    @Autowired
+    private final LoanRepository repository;
 
     @Override
     public Loan save(Loan loan) {

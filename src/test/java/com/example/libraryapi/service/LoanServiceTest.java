@@ -6,10 +6,11 @@ import com.example.libraryapi.api.model.entity.Loan;
 import com.example.libraryapi.api.model.repository.LoanRepository;
 import com.example.libraryapi.exception.BusinessException;
 import com.example.libraryapi.service.impl.LoanServiceImpl;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
@@ -29,15 +30,11 @@ import static org.mockito.Mockito.*;
 @ActiveProfiles("test")
 public class LoanServiceTest {
 
-    private LoanService loanService;
-
-    @MockBean
+    @Mock
     private LoanRepository repository;
 
-    @BeforeEach
-    public void setup() {
-        loanService = new LoanServiceImpl(repository);
-    }
+    @InjectMocks
+    private LoanServiceImpl loanService;
 
     @Test
     @DisplayName("Deve salvar um empréstimo.")

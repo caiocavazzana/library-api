@@ -75,7 +75,7 @@ public class BookController {
 
     @PutMapping("{id}")
     @Operation(description = "UPDATE A BOOK")
-    public BookDTO update(@PathVariable Long id, BookDTO dto) {
+    public BookDTO update(@PathVariable Long id, @RequestBody BookDTO dto) {
         log.info("UPDATING BOOK OF ID: {}", id);
 
         var book = service.getById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
